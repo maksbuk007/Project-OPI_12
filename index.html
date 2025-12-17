@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Проектный Отчет | Игра 2048</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Игра 2048</h1>
+        <p>Проектный отчет разработки</p>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Project Overview -->
+        <section>
+            <h2>Обзор Проекта</h2>
+            <h3>Название</h3>
+            <p>Игра 2048 — логическая головоломка с целью создания плитки 2048</p>
+
+            <h3>Назначение</h3>
+            <p>Создание классической логической игры для развлечения и развития стратегического мышления.</p>
+
+            <h3>Цели Проекта</h3>
+            <ul class="goals-list">
+                <li>Реализовать игровое поле и его отрисовку в консоли</li>
+                <li>Реализовать логику движения и объединения плиток в четырех направлениях</li>
+                <li>Реализовать систему добавления новой плитки после каждого хода</li>
+                <li>Реализовать систему подсчета очков</li>
+                <li>Реализовать систему окрашивания плиток</li>
+                <li>Добавить функцию отмены хода (Undo)</li>
+            </ul>
+        </section>
+
+        <!-- Timeline -->
+        <section>
+            <h2>График Проекта</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">12.12.2025</div>
+                    <div class="timeline-label">Дата Начала</div>
+                </div>
+                <div style="color: #00d4ff; font-size: 2rem;">→</div>
+                <div class="timeline-item">
+                    <div class="timeline-date">17.12.2025</div>
+                    <div class="timeline-label">Дата Завершения</div>
+                </div>
+            </div>
+            <div class="info-grid">
+                <div class="info-card">
+                    <strong>Статус</strong>
+                    <p>Завершен</p>
+                </div>
+                <div class="info-card">
+                    <strong>Длительность</strong>
+                    <p>5 дней</p>
+                </div>
+                <div class="info-card">
+                    <strong>Методология</strong>
+                    <p>Гибкая (Agile)</p>
+                </div>
+                <div class="info-card">
+                    <strong>Участники</strong>
+                    <p>4 человека</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team Members -->
+        <section>
+            <h2>Команда Разработчиков</h2>
+            <div class="team-grid">
+                <!-- Member 1 -->
+                <div class="team-member">
+                    <h3>Шиманский Константин Алексеевич</h3>
+                    <div class="group">ФИТ 1-8 | Role: PM & QA</div>
+                    <div class="modules">
+                        <strong>Модули:</strong>
+                        <ul class="module-list">
+                            <li>Цвета плиток</li>
+                            <li>Логика движения</li>
+                        </ul>
+                    </div>
+                    <div class="modules">
+                        <strong>Дополнительно:</strong>
+                        <ul class="module-list">
+                            <li>Блок-схемы</li>
+                            <li>Тестирование</li>
+                        </ul>
+                    </div>
+                    <div class="rating">
+                        <div class="rating-label">Вклад в проект</div>
+                        <div class="rating-bar">
+                            <div class="rating-fill" style="width: 90%;"></div>
+                        </div>
+                        <div class="rating-text">9.0 / 10</div>
+                    </div>
+                </div>
+
+                <!-- Member 2 -->
+                <div class="team-member">
+                    <h3>Стариченко Александр Сергеевич</h3>
+                    <div class="group">ФИТ 1-8 | Role: Architector & Lead Developer</div>
+                    <div class="modules">
+                        <strong>Модули:</strong>
+                        <ul class="module-list">
+                            <li>Main</li>
+                            <li>Работа с полем</li>
+                        </ul>
+                    </div>
+                    <div class="modules">
+                        <strong>Дополнительно:</strong>
+                        <ul class="module-list">
+                            <li>Блок-схемы</li>
+                            <li>Контроль сборки</li>
+                        </ul>
+                    </div>
+                    <div class="rating">
+                        <div class="rating-label">Вклад в проект</div>
+                        <div class="rating-bar">
+                            <div class="rating-fill" style="width: 90%;"></div>
+                        </div>
+                        <div class="rating-text">9.0 / 10</div>
+                    </div>
+                </div>
+
+                <!-- Member 3 -->
+                <div class="team-member">
+                    <h3>Букатин Максимилиан Максимович</h3>
+                    <div class="group">ФИТ 1-8 | Role: Fullstack Developer & QA</div>
+                    <div class="modules">
+                        <strong>Модули:</strong>
+                        <ul class="module-list">
+                            <li>Highscore</li>
+                            <li>Undo</li>
+                        </ul>
+                    </div>
+                    <div class="modules">
+                        <strong>Дополнительно:</strong>
+                        <ul class="module-list">
+                            <li>Веб-страница</li>
+                            <li>Тестирование</li>
+                        </ul>
+                    </div>
+                    <div class="rating">
+                        <div class="rating-label">Вклад в проект</div>
+                        <div class="rating-bar">
+                            <div class="rating-fill" style="width: 90%;"></div>
+                        </div>
+                        <div class="rating-text">9.0 / 10</div>
+                    </div>
+                </div>
+
+                <!-- Member 4 -->
+                <div class="team-member">
+                    <h3>Коваленков Никита Андреевич</h3>
+                    <div class="group">ФИТ 1-8 | Role: Backend Developer & Documentation</div>
+                    <div class="modules">
+                        <strong>Модули:</strong>
+                        <ul class="module-list">
+                            <li>Отрисовка</li>
+                        </ul>
+                    </div>
+                    <div class="modules">
+                        <strong>Дополнительно:</strong>
+                        <ul class="module-list">
+                            <li>Блок-схемы</li>
+                            <li>Документация</li>
+                        </ul>
+                    </div>
+                    <div class="rating">
+                        <div class="rating-label">Вклад в проект</div>
+                        <div class="rating-bar">
+                            <div class="rating-fill" style="width: 90%;"></div>
+                        </div>
+                        <div class="rating-text">9.0 / 10</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project Modules -->
+        <section>
+            <h2>Модули Проекта</h2>
+            <div class="info-grid">
+                <div class="info-card">
+                    <strong>Цвета плиток</strong>
+                    <p>Система окрашивания плиток для разных значений</p>
+                </div>
+                <div class="info-card">
+                    <strong>Highscore</strong>
+                    <p>Сохранение и отображение рекордов</p>
+                </div>
+                <div class="info-card">
+                    <strong>Работа с полем</strong>
+                    <p>Управление игровым полем 4x4</p>
+                </div>
+                <div class="info-card">
+                    <strong>Undo</strong>
+                    <p>Функция отмены последнего хода</p>
+                </div>
+                <div class="info-card">
+                    <strong>Логика движения</strong>
+                    <p>Обработка сдвига в четырех направлениях</p>
+                </div>
+                <div class="info-card">
+                    <strong>Отрисовка</strong>
+                    <p>Визуализация игрового поля в консоли</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Documentation -->
+        <section>
+            <h2>Документация</h2>
+            <p>Полная документация проекта доступна в следующих источниках:</p>
+            <div class="doc-links">
+                <a href="#" class="doc-link">
+                    <span>Описание проекта</span>
+                </a>
+                <a href="#" class="doc-link">
+                    <span>GitHub Wiki</span>
+                </a>
+                <a href="#" class="doc-link">
+                    <span>Техническое задание</span>
+                </a>
+                <a href="#" class="doc-link">
+                    <span>Отчет тестирования</span>
+                </a>
+                <a href="#" class="doc-link">
+                    <span>Диаграммы</span>
+                </a>
+                <a href="#" class="doc-link">
+                    <span>Исходный код</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- Additional Info -->
+        <section>
+            <h2>Дополнительная информация</h2>
+            <h3>Результаты Тестирования</h3>
+            <div class="info-grid">
+                <div class="info-card">
+                    <strong>Функциональные тесты</strong>
+                    <p>8/8 успешно</p>
+                </div>
+                <div class="info-card">
+                    <strong>Интеграционные тесты</strong>
+                    <p>Все модули работают корректно</p>
+                </div>
+                <div class="info-card">
+                    <strong>Баги во время разработки</strong>
+                    <p>Выкачен fix</p>
+                </div>
+                <div class="info-card">
+                    <strong>Статус проекта</strong>
+                    <p>Готов к релизу</p>
+                </div>
+            </div>
+
+            <h3>Key Features</h3>
+            <ul class="goals-list">
+                <li>Игровое поле в консоли</li>
+                <li>Управление WASD с полной механикой движения</li>
+                <li>Корректное объединение одинаковых плиток</li>
+                <li>Генерация новых плиток со случайными значениями (2 или 4)</li>
+                <li>Система подсчета очков в реальном времени</li>
+                <li>Определение конца игры с сообщением "Game Over"</li>
+                <li>Функция отмены хода (Undo)</li>
+                <li>Сохранение рекордов (Highscore)</li>
+                <li>Система цветового оформления плиток</li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Проект "Игра 2048" | ФИТ 1-8 | Дата создания отчета: 18.12.2025</p>
+    </footer>
+</body>
+</html>
